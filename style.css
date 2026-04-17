@@ -1,0 +1,70 @@
+body {
+    font-family: 'Lucida Sans', sans-serif;
+    background-color: rgb(224, 203, 218);
+    text-align: center;
+}
+h1 {
+    color: rgb(72, 65, 69);
+    text-transform: uppercase;
+}
+
+h2 {
+    transition: color 0.3s ease-in-out;
+}
+
+h2:hover {
+    color: rgb(157, 0, 0);
+    cursor: pointer; 
+}
+
+h3 {
+    transition: color 0.3s ease-in-out;
+}
+
+h3:hover {
+    color: rgb(0, 48, 190);
+    cursor: pointer; 
+}
+
+.about {
+    color: rgb(80, 62, 67);
+}
+.card {
+    border: 1px solid;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.card {
+    transition: transform 0.6s ease-in-out; 
+}
+
+.card:hover {
+    transform: scale(104%); 
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.card img {
+    width: 100%;
+}
+
+.phone-link{
+    color: rgb(105, 84, 88);
+}
+.email-info{
+    color: rgb(98, 77, 90);
+}
+div span{
+    color: rgb(81, 64, 74);
+}
+
+@media (max-width: 939px) {
+    .wrapper {grid-template-columns: repeat(2, 1fr);}
+}
+@media (max-width: 695px) {
+    .wrapper {grid-template-columns: repeat(1, 1fr);}
+}
